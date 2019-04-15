@@ -3,7 +3,9 @@
         <h1 class="title">vue-list</h1>
         <div class="features">
             <div class="box">
-                <demo :percent="0.6" :width="80" :height="80"></demo>
+                <demo :percent="percent" :width="80" :height="80" progress-color="red">
+                    <div class="percent">{{percent * 100}}%</div>
+                </demo>
             </div>
         </div>
     </div>
@@ -30,7 +32,7 @@
       demo,
     },
     mounted() {
-      // this.timer();
+      this.timer();
     },
     methods: {
       timer() {
@@ -91,6 +93,12 @@
     .box {
         width: 300px;
         height: 300px;
+    }
+    .percent{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
     }
 
     .outer-container {
