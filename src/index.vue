@@ -41,11 +41,11 @@
       }
     },
     watch: {
-      // percent () {
-      //   console.log('change ', this.percent);
-      //   console.log('context ', this.canvasContext);
-      //   this.drawCircle(this.percent);
-      // }
+      percent () {
+        console.log('change ', this.percent);
+        console.log('context ', this.canvasContext);
+        this.drawCircle(this.percent);
+      }
     },
     mounted() {
       this.initCanvas();
