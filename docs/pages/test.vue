@@ -3,7 +3,7 @@
         <h1 class="title">vue-list</h1>
         <div class="features">
             <div class="box">
-                <demo :percent="0.5" :width="80" :height="80"></demo>
+                <demo :percent="0.6" :width="80" :height="80"></demo>
             </div>
         </div>
     </div>

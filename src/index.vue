@@ -67,10 +67,10 @@
         let x = this.width / 2;
         let angle = percent * 360; //角度
 
+        this.canvasContext.clearRect(0, 0, this.width, this.height); //走完一次清空一次
         this.canvasContext.beginPath();
         console.log('angle * Math.PI / 180', angle);
         this.canvasContext.arc(x, x, x-3, 0, angle * Math.PI / 180, false);
-        this.canvasContext.clearRect(0, 0, x, x); //走完一次清空一次
         this.canvasContext.stroke();
         this.canvasContext.closePath();
         this.canvasContext.rotate(90 * Math.PI / 180) //旋转的弧度
